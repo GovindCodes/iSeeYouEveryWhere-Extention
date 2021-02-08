@@ -11,8 +11,9 @@ let images = document.getElementsByTagName("img");
 for(imgElt of images){
     let r = Math.floor(Math.random() * fileNames.length)
     let file = 'images/'+fileNames[r];
-    // we are doing this since the files we have where they live? 
+    // we are doing this since the files we have where they live?
+    // WE NEED TO SPECIFY PATH ACCORDING TO CHROME EXTENTION REACH the below line does the same
     let url = chrome.runtime.getURL(file);
     imgElt.src = url;
-    console.log(imgElt.src)
+    // console.log(url)
 }
