@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name" : "ItsOnlyYou", 
+    "version" : "0.0",
+    "web_accessible_resources" : [
+        "images/*.jpg"
+    ],
+    "content_scripts" : [
+        {
+            "matches":[
+                "<all_urls>"
+            ],
+            "js" : ["addict.js"]
+        }
+    ]
+}
